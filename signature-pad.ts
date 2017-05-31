@@ -1,7 +1,6 @@
 'use strict';
 
 import { Component, ElementRef, EventEmitter, Input, Output } from '@angular/core';
-
 declare var require: any;
 
 @Component({
@@ -9,7 +8,7 @@ declare var require: any;
   selector: 'signature-pad',
 })
 
-export class SignaturePad {
+export class AngularSignaturePad {
 
   @Input() public options: Object;
   @Output() public onBeginEvent: EventEmitter<boolean>;
@@ -27,7 +26,7 @@ export class SignaturePad {
   }
 
   public ngAfterContentInit(): void {
-    let sp: any = require('signature_pad');
+    let sp: any = require('signature_pad2').default;
     let canvas: any = this.elementRef.nativeElement.querySelector('canvas');
 
     if ((<any>this.options)['canvasHeight']) {

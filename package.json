@@ -1,6 +1,6 @@
 {
   "name": "angular-signaturepad",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Angular2 Component wrapper for szimek / signature_pad",
   "main": "index.js",
   "typings": "./index.d.ts",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/mobilestar2015/angular2-signaturepad#readme",
   "dependencies": {
-    "signature_pad": "git+https://github.com/mobilestar2015/signature_pad.git"
+    "signature_pad2": "^1.0.0"
   },
   "devDependencies": {
     "@angular/common": "2.0.1",

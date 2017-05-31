@@ -37,7 +37,7 @@ import { SignaturePadModule } from 'angular2-signaturepad';
 // then import for use in a component
 
 import { Component, ViewChild } from 'angular2/core';
-import { SignaturePad } from 'angular2-signaturepad/signature-pad';
+import { AngularSignaturePad } from 'angular2-signaturepad/signature-pad';
 
 @Component({
   template: '<signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>'
@@ -45,7 +45,7 @@ import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 
 export class SignaturePadPage{
 
-  @ViewChild(SignaturePad) signaturePad: SignaturePad;
+  @ViewChild(AngularSignaturePad) signaturePad: AngularSignaturePad;
 
   private signaturePadOptions: Object = { // passed through to szimek/signature_pad constructor
     'minWidth': 5,
