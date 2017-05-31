@@ -1,8 +1,9 @@
 # angular2-signaturepad
 Angular 2 component for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
+This is forked from https://github.com/wulfsolter/angular2-signaturepad
 
 ## Install
-`npm install angular2-signaturepad --save`
+`npm install angular-signaturepad --save`
 
 ## Usage example
 
@@ -12,6 +13,11 @@ Options are as per [szimek/signature_pad](https://www.npmjs.com/package/signatur
 * canvasWidth: width of the canvas (px)
 * canvasHeight: height of the canvas (px)
 The above options are provided to avoid accessing the DOM directly from your component to adjust the canvas size.
+
+## What's different from the original
+
+In this package, fixed the scaling issue on high DPI devices.
+Reported here.(https://github.com/szimek/signature_pad/issues/89)
 
 ```typescript
 
@@ -68,7 +74,3 @@ export class SignaturePadPage{
   }
 }
 ```
-
-## Demo App
-
-https://github.com/lathonez/angular2-signaturepad-demo
