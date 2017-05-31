@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/wulfsolter/angular2-signaturepad#readme",
   "dependencies": {
-    "signature_pad": "1.5.3"
+    "signature_pad": "git+https://github.com/mobilestar2015/signature_pad.git"
   },
   "devDependencies": {
     "@angular/common": "2.0.1",
